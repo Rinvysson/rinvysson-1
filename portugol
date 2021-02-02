@@ -1,0 +1,46 @@
+algoritmo "jokenpo"
+var
+    p1, p2: inteiro
+    n1, n2: caractere
+inicio
+      Escreval ("papel [1]")
+      Escreval ("tesoura [2]")
+      Escreval ("pedra [3]")
+      Escreval ("++++++++++++++++++++++++++++++")
+      Escreva ("Digite seu nome j1: ")
+      leia (n1)
+      Escreva ("Digite seu nome j2: ")
+      leia (n2)
+      Escreva ("escolha um numero j1: ")
+      leia (p1)
+      Escreva ("escolha um numero j2: ")
+      leia (p2)
+           Se (p1=1) e (p2=2) entao
+              Escreva (n2," venceu")
+           senao
+                      Se (p1=2) e (p2=3) entao
+                         Escreva (n2, " venceu")
+                      senao
+                                 Se (p2=1) e (p1=2) entao
+                                    Escreva (n1, " venceu")
+                                 senao
+                                            Se (p1=3) e (p2=2) entao
+                                               Escreva (n1, " venceu")
+                                            senao
+                                                       Se (p1=1) e (p2=3) entao
+                                                          Escreva (n1, " venceu")
+                                                       senao
+                                                                  Se (p1=3) e (p2=1) entao
+                                                                     Escreva (n2, " venceu")
+                                                                  senao
+                                                                             Se (p1=p2) entao
+                                                                                Escreva ("empatou")
+                                                                             senao
+                                                                             fimSe
+                                                                  fimSe
+                                                       fimSe
+                                            fimSe
+                                 fimSe
+                      fimSe
+           fimSe
+fimalgoritmo
